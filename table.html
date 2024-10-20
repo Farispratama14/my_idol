@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head></head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Style untuk baris genap dan ganjil */
+			tbody tr:nth-child(odd) {
+				background-color: #f2f2f2;
+			}
+			tbody tr:nth-child(even) {
+				background-color: #e0e0e0;
+			}
+			/* Efek hover */
+			tbody tr:hover {
+				background-color: #d1e7dd;
+				cursor: pointer;
+			}
+			/* Membuat header tabel sticky */
+			thead th {
+				position: sticky;
+				top: 0;
+				background-color: #333;
+				color: white;
+				z-index: 1;
+			}
+			/* Style untuk area scroll */
+			.table-container {
+				max-height: 400px;
+				overflow-y: auto;
+			}
+		</style>
+	</head>
+	
+	<body class="is-preload">
+	
+		<!-- Wrapper -->
+		<div id="wrapper">
+	
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Ing. Dr. Sc. Mult. Bacharuddin Jusuf Habibie</a>
+			</header>
+	
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Information</a></li>
+					<li><a href="full.html">Full Biography</a></li>
+					<li class="active"><a href="table.html">List Table</a></li>
+					<li><a href="formulir.html">Form</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/faris.pratama.5680899" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/fariispt" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/Farispratama14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+	
+			<!-- Main -->
+			<div id="main" class="container mt-5">
+				<h1 class="text-center">Data Peserta</h1>
+				<div class="table-container mt-4">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>No</th>
+								<th>Nama</th>
+								<th>Email</th>
+								<th>Jenis Kelamin</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Data Dummy -->
+							<script>
+								for (let i = 1; i <= 50; i++) {
+									document.write(`
+										<tr>
+											<td>${i}</td>
+											<td>Nama ${i}</td>
+											<td>nama${i}@example.com</td>
+											<td>${i % 2 === 0 ? 'Laki-Laki' : 'Perempuan'}</td>
+										</tr>
+									`);
+								}
+							</script>
+						</tbody>
+					</table>
+				</div>
+			</div>
+	
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="3"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</form>
+				</section>
+				<section class="split contact">
+					<section class="alt">
+						<h3>Address</h3>
+						<p>Lapas Raya street RT.002/RW.005, Way Huwi<br />
+							Jati Agung District, South Lampung Regency</p>
+					</section>
+					<section>
+						<h3>Phone</h3>
+						<p><a href="https://wa.me/6283170186199">083170186199</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="faris.122140021@student.itera.ac.id">faris.122140021@student.itera.ac.id</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.facebook.com/faris.pratama.5680899" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/fariispt" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Farispratama14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+		</div>
+	
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	
+	</body>
+</html>
